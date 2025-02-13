@@ -2,7 +2,7 @@
 
 import {SignedIn, UserButton, useUser} from "@clerk/nextjs";
 import Link from "next/link";
-import Image from "next/Image";
+import Image from "next/image";
 import Header from "@/components/Header";
 import {useQuery} from "convex/react";
 import {api} from "@/convex/_generated/api";
