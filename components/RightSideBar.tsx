@@ -39,7 +39,7 @@ const RightSideBar = () => {
                 <Header headerTitle={'Fans Like You'}/>
                 <EmblaCarousel fansLikeDetail={topPodcasters!}/>
             </section>
-            <section className={'flex flex-col gap-8 pt-12'}>
+            <section className={'flex flex-col gap-8 pt-12 overflow-y-scroll'}>
                 <Header headerTitle={'Top Podcasters'}/>
                 <div className={'flex flex-col gap-6'}>
                     {topPodcasters?.slice(0,4).map((indivPodcaster)=>(
@@ -51,7 +51,7 @@ const RightSideBar = () => {
                                 </h2>
                             </figure>
                             <div className={'flex items-center'}>
-                                <p className={'text-12 font-normal'}>
+                                <p className={'text-12 font-normal text-white-1'}>
                                     {`${indivPodcaster.totalPodcasts} ${indivPodcaster.totalPodcasts>1 ? 'Podcasts':'Podcast'}`}
                                 </p>
                             </div>

@@ -36,7 +36,7 @@ const EmblaCarousel: React.FC = ({fansLikeDetail}:CarouselProps) => {
         <section className="flex w-full flex-col gap-4 overflow-hidden" ref={emblaRef}>
             <div className={'flex'}>
                 {slides?.slice(0,5).map((item)=>(
-                    <figure key={item._id} className={'carousel_box'} onClick={()=> router.push(`/podcast/${item.podcast[0]?.podcastId}`)}>
+                    <figure key={item._id} className={'carousel_box'} onClick={()=> router.push(`/podcasts/${item.podcast[0]?.podcastId}`)}>
                         <Image
                             src={item.imageUrl}
                             alt={'card'}
